@@ -1,6 +1,6 @@
 # Quiz-Game-CLI-cpp
-
 A simple quiz game written in C++. The program displays multiple-choice questions, receives user input, checks the answer, and shows the final score. Questions is stored in a Questions class, while game flow is managed by a GameManager class. The project demonstrates basic OOP concepts in C++, including classes, vectors, dynamic question handling.
+
 ---
 
 ## **Features**
