@@ -130,6 +130,35 @@ int main()
 
     game.play();
 
+    while(true)
+    {
+        std::string playAgain;
+
+        std::cout << "Play again? (y/n) : ";
+        std::cin  >> playAgain;
+
+        if(playAgain.length() == 1)
+        {
+            playAgain[0] = toupper(playAgain[0]);
+
+            if(playAgain == "Y")
+            {
+                game.score = 0;
+                game.play();
+            }
+            
+            if(playAgain == "N")
+            {
+                std::cout << "Exiting the game. Goodbye!\n";
+                break; // Exit the loop and end the game
+            }
+        }
+        else
+        {
+            std::cout << "Invalid input. Please enter 'y' or 'n'.\n";
+        }
+    }
+
     std::cout << "Thank you for playing the quiz!\n";
 
     return 0;
